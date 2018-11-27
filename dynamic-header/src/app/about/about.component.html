@@ -1,3 +1,17 @@
 <p>
   about works!
 </p>
+
+
+<div *ngFor="let data of dataList; index as i">
+  <button (click)="show(i)" style="margin-bottom: 5px;">{{data.name}}</button>
+  <ng-container *ngIf="(button)==(i+1)">
+    <div *ngFor="let list of data.rank">
+      <div>
+        {{list}}
+      </div>
+    </div>
+  </ng-container>
+  <!-- <a href="#collapse{{i}}">{{i}} data</a> -->
+
+</div>
