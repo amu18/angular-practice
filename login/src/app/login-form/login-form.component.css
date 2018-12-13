@@ -1,0 +1,11 @@
+form{
+    width: 30%;
+    margin: auto;
+    padding: 30px;
+    background: #E6E6FA;
+    text-align: center;
+    margin-top: 5%;
+}
+.input{
+    padding: 15px 0;
+}
